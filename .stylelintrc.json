@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "block-no-empty": true,
+        "color-hex-length": "short",
+        "color-no-invalid-hex": true,
+        "declaration-empty-line-before": "never",
+        "no-irregular-whitespace": true
+    }
+}

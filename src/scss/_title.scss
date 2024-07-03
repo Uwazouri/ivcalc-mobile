@@ -1,0 +1,48 @@
+.title {
+
+    .flip {
+        transform: scaleX(-1);
+        display: inline-block;
+    }
+
+    svg {
+        height: $font-size-title;
+        width: auto;
+        fill: $on_surface;
+        vertical-align: middle;
+        @media (min-aspect-ratio:1/1) {
+            height: $font-size-title-desktop;
+        }
+    }
+
+    h1 {
+        margin: 4px 0;
+        color: $on_surface;
+        font-size: $font-size-title;
+        @media (min-aspect-ratio:1/1) {
+            font-size: $font-size-title-desktop;
+        }
+    }
+    
+    p {
+        margin: 4px 0;
+        color: $on_surface;
+        font-size: $font-size-title-sub;
+        font-weight: 100;
+        font-variant: small-caps;
+        @media (min-aspect-ratio:1/1) {
+            font-size: $font-size-title-sub-desktop;
+        }
+    }
+}
+.title-sub {
+    @include main-panel;
+    @include main-spacing;
+    font-size: $font-size-foot;
+    padding: 1vw;
+    color: rgba($on_surface, 0.5);
+    @media (min-aspect-ratio:1/1) {
+        font-size: $font-size-foot-desktop;
+        padding: 0.5rem;
+    }
+}

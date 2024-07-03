@@ -1,0 +1,42 @@
+{
+  "name": "iv-calc-mobile",
+  "version": "0.0.1",
+  "description": "Remake of LegendaryPKMN.net’s Pokémon Individual Value & Stat Calculator for simpler mobile ui and functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "sass src/scss:dist --style compressed --no-source-map",
+    "css:lint": "stylelint src/scss/*.scss  --custom-syntax postcss-scss",
+    "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
+    "build:js": "webpack --mode=production",
+    "build:html": "posthtml -c posthtml.json",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
+    "watch:html": "onchange \"src/views\" -- npm run build:html",
+    "watch": "run-p serve watch:*"
+  },
+  "author": "Uwazouri",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.1.3",
+    "browser-sync": "^3.0.2",
+    "eslint": "^9.5.0",
+    "eslint-webpack-plugin": "^4.2.0",
+    "htmlnano": "^2.1.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "posthtml": "^0.16.6",
+    "posthtml-cli": "^0.7.7",
+    "posthtml-modules": "^0.9.1",
+    "sass": "^1.77.6",
+    "stylelint": "^16.6.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

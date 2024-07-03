@@ -1,0 +1,9 @@
+.information {
+    font-size: $font-size-bread;
+    text-align: center;
+    padding: 8px 5vw;
+    @media (min-aspect-ratio:1/1) {
+        font-size: $font-size-bread-desktop;
+        padding: 8px 20vw;
+    }
+}
