@@ -1,56 +1,6 @@
-@mixin main-spacing {
-    margin: 2px 0;
-    padding: 2px;
-}
-
-@mixin main-panel {
-    border-radius: 4px;
-    color: $on_surface;
-    background-color: rgba($surface, 0.5);
-}
-
-@import 'variables.scss';
-@import 'discrete-select.scss';
-@import 'accordion.scss';
-@import 'title.scss';
-@import 'information.scss';
-@import 'pokemon.scss';
-@import 'levels.scss';
-
-body {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    font: 1rem Verdana, Geneva, Kalimati, sans-serif;
-    color: $on_background;
-    background-color: $background;
-    margin: 1vw;
-    @media (min-aspect-ratio:1/1) {
-        margin: 1vh;
-    }
-}
-
-a {
-    color: $on_surface;
-}
-
-.main-spacing {
-    @include main-spacing;
-}
-
-.main-panel {
-    @include main-panel;
-}
-
-.icon-btn {
-    border: none;
-    padding-block: 0;
-    padding-inline: 0;
-    svg {
-        z-index: 1;
-        position: relative;
-        vertical-align: middle;
-        height: 100%;
-        width: 100%;
-    }
-}
+@import 'generic/mixins.scss';
+@import 'generic/variables.scss';
+@import 'generic/elements.scss';
+@import 'generic/classes.scss';
+@import 'classes/accordion.scss';
+@import 'classes/title.scss';

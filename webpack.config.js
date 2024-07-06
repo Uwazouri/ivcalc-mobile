@@ -1,11 +1,8 @@
-/* eslint-disable no-undef */
-const ESLintPlugin = require('eslint-webpack-plugin');
-
 module.exports = {
     entry: './src/js/main.js',
     output: {
-        path: __dirname + '/dist',
-        filename: 'bundle.js'
+        path: __dirname + '/tmp',
+        filename: 'index.js'
     },
     module: {
         rules: [{

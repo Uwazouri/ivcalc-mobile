@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font: 1rem Verdana, Geneva, Kalimati, sans-serif;
+    text-align: center;
+    color: $on_background;
+    background-color: $background;
+    margin: 1vw;
+    @media (min-aspect-ratio:1/1) {
+        margin: 1vh;
+    }
+}
+
+// fix ugly color on hyperlinks
+a {
+    color: $on_surface;
+}

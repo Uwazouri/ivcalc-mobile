@@ -1,0 +1,21 @@
+.main-spacing {
+    @include main-spacing;
+}
+
+.main-panel {
+    @include main-panel;
+}
+
+.icon-btn {
+    border: none;
+    padding-block: 0;
+    padding-inline: 0;
+    
+    svg {
+        z-index: 1;
+        position: relative;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+    }
+}

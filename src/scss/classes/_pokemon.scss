@@ -7,6 +7,7 @@
         font-size: $font-size-foot-desktop;
         padding: 0 30vw;
     }
+
     .pokemon-button {
         background-color: rgba(0,0,0,0.25);
         width: 100%;
@@ -21,6 +22,7 @@
             margin: 1vw 0 0;
         }
     }
+
     h4 {
         color: $surface;
         margin: 0;
@@ -32,6 +34,7 @@
             font-size: $font-size-bread-desktop;
         }
     }
+    
     h5 {
         color: $on_surface;
         opacity: 0.9;

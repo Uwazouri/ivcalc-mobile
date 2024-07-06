@@ -1,0 +1,10 @@
+@mixin main-spacing {
+    margin: 2px 0;
+    padding: 2px;
+}
+
+@mixin main-panel {
+    border-radius: 4px;
+    color: $on_surface;
+    background-color: rgba($surface, 0.5);
+}
